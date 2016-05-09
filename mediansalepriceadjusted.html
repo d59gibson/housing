@@ -49,7 +49,7 @@ body {
     <script type="text/javascript">
 //Start Bar Chart
 var svgBar = dimple.newSvg("#BarChart", "92%", "95%");
-    d3.csv("https://raw.githubusercontent.com/lexingtonplanning/housing/gh-pages/Housing%20Price%20Data_95_2015.csv", function (data) {
+    d3.csv("https://raw.githubusercontent.com/lexingtonplanning/housing/gh-pages/Housing%20Price%20Data.csv", function (data) {
       dimple.filterData(data, "Municipality", ["Lexington", "Reading", "Burlington", "Winchester", "Norwood"]);
 var BarChart = new dimple.chart(svgBar, data);
       BarChart.setBounds("15%", "5%", "65%", "82%");
