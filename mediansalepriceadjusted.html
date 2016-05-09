@@ -54,7 +54,7 @@ var svgBar = dimple.newSvg("#BarChart", "92%", "95%");
 var BarChart = new dimple.chart(svgBar, data);
       BarChart.setBounds("15%", "5%", "65%", "82%");
       var x = BarChart.addCategoryAxis("x", "Year");
-      var y = BarChart.addMeasureAxis("y", "Median Sales Price");
+      var y = BarChart.addMeasureAxis("y", "Median Sales Price Adjusted");
 	  //y.overrideMax = 1000000;
       var s = BarChart.addSeries("Municipality", dimple.plot.line);
 	  s.addOrderRule("Municipality");
