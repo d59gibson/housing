@@ -57,7 +57,8 @@ var BarChart = new dimple.chart(svgBar, data);
       var y = BarChart.addMeasureAxis("y", "Median Sales Price Inflation Adjusted");
 	  //y.overrideMax = 1000000;
 	  y.tickFormat = '$,.0f';
-	  
+	  y.fontSize = "auto";
+	  x.fontSize = "auto"
       var s = BarChart.addSeries("Municipality", dimple.plot.line);
 	  s.addOrderRule("Municipality");
       s.interpolation = "cardinal";
