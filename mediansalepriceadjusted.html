@@ -23,7 +23,7 @@ body {
   font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;
     font-size: 14px;
 	font-style: bold;
-	font-variant: normal;
+	font-variant: strong;
 	font-weight: 500;
 	line-height: 15.4px;
   text-align: center;
@@ -60,7 +60,7 @@ var BarChart = new dimple.chart(svgBar, data);
       var s = BarChart.addSeries("Municipality", dimple.plot.line);
 	  s.addOrderRule("Municipality");
       s.interpolation = "cardinal";
-	  s.lineWeight = 2.5;
+	  s.lineWeight = 2;
       s.lineMarkers = true;
       var BarLegend = BarChart.addLegend ("90%", "10%", "10%", "90%", "right");
 	  BarLegend.fontSize = "auto";
