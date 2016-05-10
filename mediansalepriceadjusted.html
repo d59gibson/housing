@@ -50,7 +50,7 @@ body {
 //Start Bar Chart
 var svgBar = dimple.newSvg("#BarChart", "92%", "95%");
     d3.csv("https://raw.githubusercontent.com/lexingtonplanning/housing/gh-pages/Housing%20Price%20Data.csv", function (data) {
-      dimple.filterData(data, "Municipality", ["Lexington", "Reading", "Burlington", "Winchester", "Norwood"]);
+      dimple.filterData(data, "Municipality");
 var BarChart = new dimple.chart(svgBar, data);
       BarChart.setBounds("15%", "5%", "65%", "82%");
       var x = BarChart.addCategoryAxis("x", "Year");
@@ -58,7 +58,7 @@ var BarChart = new dimple.chart(svgBar, data);
 	  //y.overrideMax = 1000000;
 	  y.tickFormat = ',.0f';
       var s = BarChart.addSeries("Municipality", dimple.plot.line);
-	  s.addOrderRule("Municipality");
+	  s.addOrderRule(["Burlington", "Lexington", "Natick", "Norwood", "Reading", "Wakefield", "Winchester" ]);
       s.interpolation = "cardinal";
 	  s.lineWeight = 2;
       s.lineMarkers = true;
