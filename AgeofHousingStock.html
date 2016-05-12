@@ -57,11 +57,15 @@ var BarChart = new dimple.chart(svgBar, data);
       var x = BarChart.addCategoryAxis("x", "Municipality");
       var y = BarChart.addMeasureAxis("y", "Percentage");
 	  y.overrideMax = 100;
+	  y.tickFormat = '%,.0f';
+	  y.fontSize = "13px";
+	  x.fontSize = "13px";
       var s = BarChart.addSeries("Decade", dimple.plot.bar);
 	  s.addOrderRule("Decade");
       s.interpolation = "cardinal";
+
       var BarLegend = BarChart.addLegend ("90%", "10%", "10%", "90%", "right");
-	  BarLegend.fontSize = "auto";
+	  BarLegend.fontSize = "12px";
 		var BarStoryboard = BarChart.setStoryboard("Decade");
 		BarStoryboard.categoryFields = [null];
 		BarChart.draw();
