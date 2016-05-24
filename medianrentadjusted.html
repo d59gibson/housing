@@ -50,15 +50,23 @@ body {
 //Start Bar Chart
 var svgBar = dimple.newSvg("#BarChart", "92%", "95%");
     d3.csv("https://raw.githubusercontent.com/lexingtonplanning/housing/gh-pages/UrbanizedAreaRent_80_10.csv", function (data) {
-    
+      
 var BarChart = new dimple.chart(svgBar, data);
       BarChart.setBounds("15%", "5%", "65%", "82%");
       var x = BarChart.addCategoryAxis("x", "Year");
       var y = BarChart.addMeasureAxis("y", "2015 Adjusted");
+	  //y.overrideMax = 1000000;
+	  y.tickFormat = '$,.0f';
+	  y.fontSize = "13px";
+	  x.fontSize = "12px";
       var s = BarChart.addSeries("Area", dimple.plot.line);
 	  s.addOrderRule("Area");
       s.interpolation = "cardinal";
+	  s.lineWeight = 2;
+      s.lineMarkers = true;
+	  BarChart.assignColor("Boston", "red", "red", 1);
       var BarLegend = BarChart.addLegend ("90%", "10%", "10%", "90%", "right");
+	  BarLegend.fontSize = "12px";
 		var BarStoryboard = BarChart.setStoryboard("Area");
 		BarStoryboard.categoryFields = [null];
 		BarChart.draw();
