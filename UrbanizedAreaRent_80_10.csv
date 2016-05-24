@@ -1,0 +1,31 @@
+Year,Area,Median Gross Rent,2015 Adjusted
+1980,Boston,281,770
+1980,Massachusetts,242,662
+1980,NYC,261,715
+1980,San Francisco,291,797
+1980,Seattle,286,784
+1980,Washington DC,293,803
+1990,Boston,655,"1,153"
+1990,Massachusetts,467,822
+1990,NYC,537,945
+1990,San Francisco,673,"1,185"
+1990,Seattle,518,912
+1990,Washington DC,670,"1,180"
+2000,Boston,773,"1,063"
+2000,Massachusetts,684,941
+2000,NYC,740,"1,018"
+2000,San Francisco,914,"1,257"
+2000,Seattle,731,"1,006"
+2000,Washington DC,827,"1,138"
+2010,Boston,1137,"1,236"
+2010,Massachusetts,1006,"1,093"
+2010,NYC,1108,"1,204"
+2010,San Francisco,1282,"1,393"
+2010,Seattle,974,"1,059"
+2010,Washington DC,1305,"1,418"
+2014,Boston,1225,"1,332"
+2014,Massachusetts,1088,"1,089"
+2014,NYC,1248,"1,357"
+2014,San Francisco,1433,"1,558"
+2014,Seattle,1127,"1,225"
+2014,Washington DC,1512,"1,643"
