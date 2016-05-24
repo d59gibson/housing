@@ -1,31 +1,31 @@
-Year,Area,Median Gross Rent,2015 Adjusted
-1980,Boston,281,769.8630137
-1980,Massachusetts,241.6492451,662.0527262
-1980,NYC,261,715.0684932
-1980,San Francisco,291,797.260274
-1980,Seattle,286,783.5616438
-1980,Washington DC,293,802.739726
-1990,Boston,655,"1,153"
-1990,Massachusetts,467.1644989,822.4727092
-1990,NYC,537,945.4225352
-1990,San Francisco,673,"1,185"
-1990,Seattle,518,911.971831
-1990,Washington DC,670,"1,180"
-2000,Boston,773,"1,063"
-2000,Massachusetts,684,940.8528198
-2000,NYC,740,"1,018"
-2000,San Francisco,914,"1,257"
-2000,Seattle,731,"1,006"
-2000,Washington DC,827,"1,138"
-2010,Boston,1137,"1,236"
-2010,Massachusetts,1006,"1,093"
-2010,NYC,1108,"1,204"
-2010,San Francisco,1282,"1,393"
-2010,Seattle,974,"1,059"
-2010,Washington DC,1305,"1,418"
-2014,Boston,1225,"1,332"
-2014,Massachusetts,1088,"1,089"
-2014,NYC,1248,"1,357"
-2014,San Francisco,1433,"1,558"
-2014,Seattle,1127,"1,225"
-2014,Washington DC,1512,"1,643"
+Year,Area,2015 Adjusted
+1980,Boston,769.8630137
+1980,Massachusetts,662.0527262
+1980,NYC,715.0684932
+1980,San Francisco,797.260274
+1980,Seattle,783.5616438
+1980,Washington DC,802.739726
+1990,Boston,1153
+1990,Massachusetts,822.4727092
+1990,NYC,945.4225352
+1990,San Francisco,1185
+1990,Seattle,911.971831
+1990,Washington DC,1180
+2000,Boston,1063
+2000,Massachusetts,940.8528198
+2000,NYC,1018
+2000,San Francisco,1257
+2000,Seattle,1006
+2000,Washington DC,1138
+2010,Boston,1236
+2010,Massachusetts,1093
+2010,NYC,1204
+2010,San Francisco,1393
+2010,Seattle,1059
+2010,Washington DC,1418
+2014,Boston,1332
+2014,Massachusetts,1089
+2014,NYC,1357
+2014,San Francisco,1558
+2014,Seattle,1225
+2014,Washington DC,1643
