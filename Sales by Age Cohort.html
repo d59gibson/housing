@@ -50,29 +50,30 @@ body {
 //Start Bar Chart
 var svgBar = dimple.newSvg("#BarChart", "92%", "95%");
     d3.csv("https://raw.githubusercontent.com/lexingtonplanning/housing/gh-pages/Average%20Sales%20By%20Age%20Cohort_2017-01-27.csv", function (data) {
-      dimple.filterData(data, "Year Built", ["Pre 1945", "1945-1950", "1951-1960", "1961-1970", "1971-1980", "1981-1990", "1991-2000", "2001-2010", "2010-2016"]);
+      dimple.filterData(data, "Sales Year", ["2016", "2015", "2014", "2013", "2012", "2011"]);
 var BarChart = new dimple.chart(svgBar, data);
       BarChart.setBounds("15%", "5%", "65%", "82%");
-      var x = BarChart.addCategoryAxis("x", "Sales Year");
+      var x = BarChart.addCategoryAxis("x", "Year Built");
       var y = BarChart.addMeasureAxis("y", "Dec 16 CPI Adjusted");
 	  y.overrideMax = 1500000;
 	  y.tickFormat = '$,.0f';
 	  y.fontSize = "13px";
 	  x.fontSize = "12px";
-      var s = BarChart.addSeries("Year Built", dimple.plot.line);
-	  s.addOrderRule("Year Built");
+	  x.addOrderRule("Year Built", false);
+      var s = BarChart.addSeries("Sales Year", dimple.plot.line);
+	  s.addOrderRule("Sales Year");
       s.interpolation = "cardinal";
 	  s.lineWeight = 2;
       s.lineMarkers = true;
 	  BarChart.assignColor("Lexington", "red", "red", 1);
       var BarLegend = BarChart.addLegend ("90%", "10%", "10%", "90%", "right");
 	  BarLegend.fontSize = "12px";
-		var BarStoryboard = BarChart.setStoryboard("Year Built");
+		var BarStoryboard = BarChart.setStoryboard("Sales Year");
 		BarStoryboard.categoryFields = [null];
 		BarChart.draw();
 		BarStoryboard.storyLabel.remove();
         BarChart.legends = [];
-        var filterValues = dimple.getUniqueValues(data, "Year Built");
+        var filterValues = dimple.getUniqueValues(data, "Sales Year");
         BarLegend.shapes.selectAll("rect")
           .on("click", function (e) {
             var hide = false;
@@ -91,7 +92,7 @@ var BarChart = new dimple.chart(svgBar, data);
               d3.select(this).style("opacity", 0.8);
             }
             filterValues = newFilters;
-            BarChart.data = dimple.filterData(data, "Year Built", filterValues);
+            BarChart.data = dimple.filterData(data, "Sales Year", filterValues);
             BarChart.draw(800);
           });
 		  window.onresize = function resize () {
