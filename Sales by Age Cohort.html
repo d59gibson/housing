@@ -55,7 +55,7 @@ var BarChart = new dimple.chart(svgBar, data);
       BarChart.setBounds("15%", "5%", "65%", "82%");
       var x = BarChart.addCategoryAxis("x", "Sales Year");
       var y = BarChart.addMeasureAxis("y", "Dec 16 CPI Adjusted");
-	  //y.overrideMax = 1500000;
+	  y.overrideMax = 1500000;
 	  y.tickFormat = '$,.0f';
 	  y.fontSize = "13px";
 	  x.fontSize = "12px";
